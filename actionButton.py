@@ -14,9 +14,9 @@ import sys
 
 class Window(QMainWindow): 
 
-    def __init__(self): 
+    def _init_(self): 
 
-        super().__init__() 
+        super()._init_() 
 
  
  
@@ -30,7 +30,7 @@ class Window(QMainWindow):
 
         # setting geometry 
 
-        self.setGeometry(100, 100, 600, 400) 
+        self.setGeometry(100, 300, 500, 300) 
 
  
  
@@ -58,7 +58,7 @@ class Window(QMainWindow):
 
         # creating a push button 
 
-        button = QPushButton("CLICK", self) 
+        button = QPushButton("SUBMIT", self) 
 
  
  
@@ -86,7 +86,7 @@ class Window(QMainWindow):
 
         # printing pressed 
 
-        print("pressed") 
+        print("You Submited Successfully!!") 
 
  
  
@@ -107,4 +107,4 @@ window = Window()
 
 # start the app 
 
-sys.exit(App.exec()) 
+sys.exit(App.exec())
